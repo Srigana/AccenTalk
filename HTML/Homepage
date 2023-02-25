@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+</head>
+<style>
+    body {
+        background-image: url("img/final.png");
+        background-color: rgb(255, 255, 255);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        background-size: 100% 100%;
+    }
+  </style>
+  <style>
+    div.relative{
+        position: relative;
+        top: 550px;
+        left: 850px;
+        opacity: 60%;
+    }
+    div.mac{
+        position: relative;
+        top: 333px;
+        left: 1150px;
+        opacity: 60%;
+    }
+    div.happy{
+        position: relative;
+        top: 530px;
+        left: 830px;
+        background-size: 50px;
+        color: #043F8D;
+    }
+    div.sad{
+        position: relative;
+        top: 475px;
+        left: 1140px;
+        background-size: 50px;
+        color: #043F8D;
+    }
+  </style>
+<body>
+    <!--<button style="width: 100px; height: 50px; background-color:#9DF2FA; border-color: #9DF2FA; border-radius: 12px; ;" >TEXT</button>
+    <button style="width: 100px; height: 50px; background-color:#9DF2FA; border-color: #9DF2FA; border-radius: 12px; ;" >UPLOAD FILE</button>-->
+    <div class="relative">
+      <a  href="index.html"> <img src="img/1214810.png" width="80px" height="80px"></a>
+    </div>
+    <div class="happy">
+        <h2 style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">Insert Text</h2>
+      </div>
+      <div class="sad">
+        <h2 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Upload File</h2>
+      </div>
+    <div class="mac">
+      
+        <a  href="pag2.html"> <img src="img/upppp.png"  width="95px" height="95px"></a>
+        
+    </div>
+       
+</body>
+</html>
