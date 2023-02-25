@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+
+  <title>In Text</title>
+</head>
+
+  <style>
+    body {
+        background-image: url("img/2.png");
+        background-color: rgb(255, 255, 255);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        background-size: 100% 100%;
+    }
+  </style>
+
+<body class="text-white">
+  <!--<video autoplay loop muted plays-inline class="bgvdo">
+    <source src="img/bgvdo.mp4" type="video/mp4">
+  </video>-->
+  
+  <div class="container text-center">
+    <img src="img/robo2-removebg-preview.png" alt="" class="mb-5" style="height: 120px; width: 120px;">
+    <img src="img/chhhh.png" alt="" class="mb-5" style="height: 60px; width: 150px;">
+    <div class="row">
+      
+      <div class="col-md-6 mx-auto">
+        <form class="mb-5">
+          <div class="form-group">
+            <textarea name="inputBox" id="inputBox" class="form-control form-control-lg" placeholder="Type any text or abbreviation..." style="background-color: #bef7fc;"></textarea>
+            
+            <script>
+              var abbreviations = {
+                    "lol": "laugh out loud",
+                    "brb": "be right back",
+                    "btw": "by the way",
+                    "LOL": "laugh out loud",
+                    "BRB": "be right back",
+                    "BTW": "by the way",
+                    "BTS": "behind the scene",
+                    "CMW": "change my view",
+                    "FLB": "Flashback like friday",
+                    "FTW": "For the win",
+                    "FUD": "fear, uncertainity & doubt",
+                    "IMO": "In my opinion",
+                    "IMHO": "In my humble opinion",
+                    "ROFL": "Rolling on the floor laughing",
+                    "TFTF": "Thanks for following",
+                    "WFH": "Working from home",
+                    "IDC": "I don't care",
+                    "IDK": "I don't know",
+                    "IRL": "In real life",
+                    "JK": "Just kidding",
+                    "LMAO": "Laughing my Ass off",
+                    "LMK": "Let me know",
+                    "NBD": "No big deal",
+                    "NM": "Not much",
+                    "NSFW": "Not safe for work",
+                    "JIC": "Just in case",
+                    "OTP": "One true pairing",
+                    "IANAD": "I'm not a doctor",
+                    "WDYM": "What do you mean",
+                    "WDYMBT": "What do you mean by that",
+                    "bts": "behind the scene",
+                    "cmw": "change my view",
+                    "flb": "Flashback like friday",
+                    "ftw": "For the win",
+                    "fud": "fear, uncertainity & doubt",
+                    "imo": "In my opinion",
+                    "imho": "In my humble opinion",
+                    "rofl": "Rolling on the floor laughing",
+                    "tftf": "Thanks for following",
+                    "wfh": "Working from home",
+                    "idc": "I don't care",
+                    "idk": "I don't know",
+                    "irl": "In real life",
+                    "jk": "Just kidding",
+                    "lmao": "Laughing my Ass off",
+                    "lmk": "Let me know",
+                    "nbd": "No big deal",
+                    "nm": "Not much",
+                    "nsfw": "Not safe for work",
+                    "jic": "Just in case",
+                    "otp": "One true pairing",
+                    "ianad": "I'm not a doctor",
+                    "wdym": "What do you mean",
+                    "wdymbt": "What do you mean by that",
+                    "LYLAS": "Love you like a sister",
+                    "NVM": "Never mind",
+                    "NP": "No problem",
+                    "TYVM": "Thank you very much",
+                    "WYWH": "Wish you were here",
+                    "POV": "Point of view",
+                    "ROTF": "Rolling on the floor",
+                    "TIA": "Thanks in advance",
+                    "SITD": "Still in the dark",
+                    "OMG": "Oh my god",
+                    "OIC": "Oh, I see",
+                    "STBY": "Sucks to be you",
+                    "SBY": "Somebody",
+                    "TTYL": "Talk to you later",
+                    "PPL": "People",
+                    "THX": "Thanks",
+                    "YW": "Your welcome",
+                    "lylas": "Love you like a sister",
+                    "nvm": "Never mind",
+                    "np": "No problem",
+                    "tyvm": "Thank you very much",
+                    "wywh": "Wish you were here",
+                    "pov": "Point of view",
+                    "rotf": "Rolling on the floor",
+                    "tia": "Thanks in advance",
+                    "sitd": "Still in the dark",
+                    "omg": "Oh my god",
+                    "oic": "Oh, I see",
+                    "stby": "Sucks to be you",
+                    "sby": "Somebody",
+                    "ttyl": "Talk to you later",
+                    "ppl": "People",
+                    "thx": "Thanks",
+                    "yw": "Your welcome",
+                    //add more abbriviations
+		};
+
+          var inputBox = document.getElementById("inputBox");
+          inputBox.addEventListener("input", function() {
+              var inputText = inputBox.value;
+              var fullForm = abbreviations[inputText.toLowerCase()];
+              if (fullForm) {
+                  inputBox.value = fullForm;
+              }
+          });
+
+            </script>
+          </div>
+          <div class="form-group">
+            <select id="voice-select" class="form-control form-control-lg" style="background-color: #bef7fc;"></select>
+          </div>
+          <br>
+          <div class="form-group">
+            <label for="rate" style="color: black;">Rate</label>
+            <div id="rate-value" class="badge badge-primary " style="color: rgb(247, 246, 244); background-color: #9DF2FA;">1</div>
+            <input type="range" id="rate" class="slider" min="0.5" max="2" value="1" step="0.1">
+          </div>
+          <div class="form-group">
+            <label for="pitch" style="color: black;">Pitch</label>
+            <div id="pitch-value" class="badge badge-primary " style="color: rgb(247, 246, 244); background-color: #9DF2FA;">
+    
+              1</div>
+            <input type="range" id="pitch" class="slider" min="0" max="2" value="1" step="0.1">
+          </div>
+          <button class="btn btn-light btn-lg btn-block" style="background-color: #9DF2FA; size: 15px; width: 30%; margin-left: 33.3339%;" >AccenTalk...</button>
+        </form>
+         
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
