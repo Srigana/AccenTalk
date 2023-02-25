@@ -1,0 +1,40 @@
+body {
+  background-position: fixed;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+
+
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 40px;
+  height: 40px;
+  background-color: blueviolet;
+  border-radius: 50%;
+
+}
+
+/*.bgvdo{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background-size: cover;
+  background-size: 100% 100%;
+}
+
+@media(min-aspect-ratio: 16/9){
+  .bgvdo{
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media(min-aspect-ratio: 16/9){
+  .bgvdo{
+    width: auto;
+    height: 100%;
+  }
+}*/
