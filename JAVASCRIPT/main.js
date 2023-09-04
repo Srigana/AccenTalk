@@ -35,7 +35,7 @@ const getVoices = () => {
   });
 };
 
-//Line 35, 36 causes voice list duplication
+
 getVoices();
 if (synth.onvoiceschanged !== undefined) {
   synth.onvoiceschanged = getVoices;
