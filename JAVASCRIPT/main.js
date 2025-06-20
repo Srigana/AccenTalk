@@ -21,19 +21,19 @@ let voices = [];
 
 const getVoices = () => {
   voices = synth.getVoices();
-  
-  voices.forEach(voice => {
-    // Create option element
-    const option = document.createElement('option');
-    // Fill option with voice and language
-    option.textContent = voice.name + '(' + voice.lang + ')';
 
-    // Set needed option attributes
+  // Clear existing options
+  voiceSelect.innerHTML = '';
+
+  voices.forEach(voice => {
+    const option = document.createElement('option');
+    option.textContent = `${voice.name} (${voice.lang})`;
     option.setAttribute('data-lang', voice.lang);
     option.setAttribute('data-name', voice.name);
     voiceSelect.appendChild(option);
   });
 };
+
 
 
 getVoices();
@@ -65,7 +65,7 @@ const speak = () => {
     // Speak end
     speakText.onend = e => {
       console.log('Done speaking...');
-      body.style.background = '#141414';
+      body.style.background = '#ffffff';
     };
 
     // Speak error
